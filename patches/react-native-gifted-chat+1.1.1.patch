@@ -1,0 +1,101 @@
+diff --git a/node_modules/react-native-gifted-chat/lib/Avatar.js b/node_modules/react-native-gifted-chat/lib/Avatar.js
+index 70ce1d7..f1d9d1b 100644
+--- a/node_modules/react-native-gifted-chat/lib/Avatar.js
++++ b/node_modules/react-native-gifted-chat/lib/Avatar.js
+@@ -73,7 +73,7 @@ export function Avatar(props) {
+             styles[position][computedStyle],
+             containerStyle && containerStyle[position],
+         ]}>
+-      {renderAvatarComponent()}
++      {/* {renderAvatarComponent()} */}
+     </View>);
+ }
+ Avatar.defaultProps = {
+diff --git a/node_modules/react-native-gifted-chat/lib/Composer.js b/node_modules/react-native-gifted-chat/lib/Composer.js
+index 7bbf561..8a168b2 100644
+--- a/node_modules/react-native-gifted-chat/lib/Composer.js
++++ b/node_modules/react-native-gifted-chat/lib/Composer.js
+@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
+         flex: 1,
+         marginLeft: 10,
+         fontSize: 16,
+-        lineHeight: 16,
++        // lineHeight: 16,
+         ...Platform.select({
+             web: {
+                 paddingTop: 6,
+@@ -18,12 +18,12 @@ const styles = StyleSheet.create({
+             },
+         }),
+         marginTop: Platform.select({
+-            ios: 6,
++            // ios: 6,
+             android: 0,
+             web: 6,
+         }),
+         marginBottom: Platform.select({
+-            ios: 5,
++            ios: 1,
+             android: 3,
+             web: 4,
+         }),
+diff --git a/node_modules/react-native-gifted-chat/lib/GiftedChat.js b/node_modules/react-native-gifted-chat/lib/GiftedChat.js
+index a2f1148..b928ca9 100644
+--- a/node_modules/react-native-gifted-chat/lib/GiftedChat.js
++++ b/node_modules/react-native-gifted-chat/lib/GiftedChat.js
+@@ -3,7 +3,6 @@ import React from 'react';
+ import { Platform, StyleSheet, View, KeyboardAvoidingView, } from 'react-native';
+ import { ActionSheetProvider, } from '@expo/react-native-action-sheet';
+ import uuid from 'uuid';
+-import { SafeAreaView } from 'react-native-safe-area-context';
+ import dayjs from 'dayjs';
+ import localizedFormat from 'dayjs/plugin/localizedFormat';
+ import * as utils from './utils';
+@@ -421,7 +420,7 @@ class GiftedChat extends React.Component {
+     render() {
+         if (this.state.isInitialized === true) {
+             const { wrapInSafeArea } = this.props;
+-            const Wrapper = wrapInSafeArea ? SafeAreaView : View;
++            const Wrapper = View;
+             const actionSheet = this.props.actionSheet ||
+                 (() => { var _a; return (_a = this._actionSheetRef.current) === null || _a === void 0 ? void 0 : _a.getContext(); });
+             const { getLocale } = this;
+diff --git a/node_modules/react-native-gifted-chat/lib/InputToolbar.js b/node_modules/react-native-gifted-chat/lib/InputToolbar.js
+index 2ff651d..7e92b75 100644
+--- a/node_modules/react-native-gifted-chat/lib/InputToolbar.js
++++ b/node_modules/react-native-gifted-chat/lib/InputToolbar.js
+@@ -8,12 +8,12 @@ import Color from './Color';
+ import { StylePropType } from './utils';
+ const styles = StyleSheet.create({
+     container: {
+-        borderTopWidth: StyleSheet.hairlineWidth,
+-        borderTopColor: Color.defaultColor,
+-        backgroundColor: Color.white,
+-        bottom: 0,
+-        left: 0,
+-        right: 0,
++        borderRadius:20,
++        backgroundColor: '#F4F4F4',
++        bottom: 40,
++        width:'90%',
++        alignSelf:'center',
++        padding:5
+     },
+     primary: {
+         flexDirection: 'row',
+diff --git a/node_modules/react-native-gifted-chat/lib/Message.js b/node_modules/react-native-gifted-chat/lib/Message.js
+index 6202ad9..2b84469 100644
+--- a/node_modules/react-native-gifted-chat/lib/Message.js
++++ b/node_modules/react-native-gifted-chat/lib/Message.js
+@@ -103,9 +103,9 @@ export default class Message extends React.Component {
+                         !this.props.inverted && { marginBottom: 2 },
+                         containerStyle && containerStyle[position],
+                     ]}>
+-              {this.props.position === 'left' ? this.renderAvatar() : null}
++              {/* {this.props.position === 'left' ? this.renderAvatar() : null} */}
+               {this.renderBubble()}
+-              {this.props.position === 'right' ? this.renderAvatar() : null}
++              {/* {this.props.position === 'right' ? this.renderAvatar() : null} */}
+             </View>)}
+         </View>);
+         }

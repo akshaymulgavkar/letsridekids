@@ -1,0 +1,34 @@
+diff --git a/node_modules/react-native-smooth-pincode-input/src/index.js b/node_modules/react-native-smooth-pincode-input/src/index.js
+index 0a00f22..4fbd381 100644
+--- a/node_modules/react-native-smooth-pincode-input/src/index.js
++++ b/node_modules/react-native-smooth-pincode-input/src/index.js
+@@ -6,7 +6,7 @@ import {
+   TextInput,
+   StyleSheet,
+   I18nManager,
+-  ViewPropTypes,
++  StyleProp
+ } from 'react-native';
+ import * as Animatable from 'react-native-animatable';
+ 
+@@ -286,14 +286,14 @@ SmoothPinCodeInput.propTypes = {
+ 
+   restrictToNumbers: PropTypes.bool,
+ 
+-  containerStyle: ViewPropTypes.style,
++  containerStyle: StyleProp,
+ 
+-  cellStyle: ViewPropTypes.style,
+-  cellStyleFocused: ViewPropTypes.style,
+-  cellStyleFilled: ViewPropTypes.style,
++  cellStyle: StyleProp,
++  cellStyleFocused: StyleProp,
++  cellStyleFilled: StyleProp,
+ 
+-  textStyle: Text.propTypes.style,
+-  textStyleFocused: Text.propTypes.style,
++  textStyle: StyleProp,
++  textStyleFocused: StyleProp,
+ 
+   animated: PropTypes.bool,
+   animationFocused: PropTypes.oneOfType([

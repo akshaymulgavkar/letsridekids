@@ -1,0 +1,28 @@
+diff --git a/node_modules/react-native-tab-view/src/TabBar.tsx b/node_modules/react-native-tab-view/src/TabBar.tsx
+index 26911c0..8bbf2c8 100644
+--- a/node_modules/react-native-tab-view/src/TabBar.tsx
++++ b/node_modules/react-native-tab-view/src/TabBar.tsx
+@@ -605,6 +605,7 @@ const styles = StyleSheet.create({
+   },
+   scroll: {
+     overflow: Platform.select({ default: 'scroll', web: undefined }),
++    
+   },
+   tabBar: {
+     backgroundColor: '#2196f3',
+diff --git a/node_modules/react-native-tab-view/src/TabBarItem.tsx b/node_modules/react-native-tab-view/src/TabBarItem.tsx
+index 7cd8ded..408fc0f 100644
+--- a/node_modules/react-native-tab-view/src/TabBarItem.tsx
++++ b/node_modules/react-native-tab-view/src/TabBarItem.tsx
+@@ -281,6 +281,11 @@ function TabBarItem<T extends Route>(props: Props<T>) {
+       route={route}
+       index={tabIndex}
+       routesLength={navigationState.routes.length}
++      style={{
++        backgroundColor: navigationState.index === tabIndex ? "#fff" : "#F3F3F3",
++        margin:'2%', 
++        borderRadius:10
++      }}
+     />
+   );
+ }

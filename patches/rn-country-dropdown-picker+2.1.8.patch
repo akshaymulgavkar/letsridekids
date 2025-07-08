@@ -1,0 +1,22 @@
+diff --git a/node_modules/rn-country-dropdown-picker/src/DropdownCountryPicker.tsx b/node_modules/rn-country-dropdown-picker/src/DropdownCountryPicker.tsx
+index 3ab5937..70f786c 100644
+--- a/node_modules/rn-country-dropdown-picker/src/DropdownCountryPicker.tsx
++++ b/node_modules/rn-country-dropdown-picker/src/DropdownCountryPicker.tsx
+@@ -122,7 +122,7 @@ export default function DropdownCountyPicker({
+         }
+       >
+         {CountryCodes.includes(iso) && CountryNames.includes(term) ? (
+-          <Flag code={iso} size={24} />
++          <Flag code={iso} size={24} style={{marginStart:15}}/>
+         ) : null}
+         <TextInput
+           style={
+@@ -139,7 +139,7 @@ export default function DropdownCountyPicker({
+                 ]
+           }
+           placeholder={Placeholder ? Placeholder : "Select Country..."}
+-          placeholderTextColor="black"
++          placeholderTextColor="#00000070"
+           value={term}
+           onChange={searchFilter}
+         />

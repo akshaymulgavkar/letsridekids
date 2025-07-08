@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "291837779495",
+    "firebase_url": "https://lets-ride-kids-lrk-default-rtdb.firebaseio.com",
+    "project_id": "lets-ride-kids-lrk",
+    "storage_bucket": "lets-ride-kids-lrk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291837779495:android:a375fdd1eeda6519c6f802",
+        "android_client_info": {
+          "package_name": "com.lrk.letsridekids"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291837779495-34lgat23s026ougtol891d4gqnj81pbo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lrk.letsridekids",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "291837779495-60gdj6dh8rd5p5fc2ftbaf36grveupto.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lrk.letsridekids",
+            "certificate_hash": "251f8ac0c3228c575fecb9f7d4590a60602c4ed4"
+          }
+        },
+        {
+          "client_id": "291837779495-acis5dpr6jc9h402f8ap72empjducanu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lrk.letsridekids",
+            "certificate_hash": "4063aeb38d1fee32b440fdd0110768f02dd81896"
+          }
+        },
+        {
+          "client_id": "291837779495-d0tpdh5bjhf0r5maa2g2sbic5de0kdq3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYLIYhK_wmgRdKa1V8v5rOSPnY8Rk0JTQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291837779495-d0tpdh5bjhf0r5maa2g2sbic5de0kdq3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "291837779495-8qfa4essogtuqileaf69lfjt24mhgm5j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lrk.letsridekids"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
